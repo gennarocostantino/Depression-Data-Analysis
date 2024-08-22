@@ -169,17 +169,25 @@ Write here .....
 The dataset integrates information from the following Kaggle datasets:
 
 3k Conversations Dataset for Chatbot: https://www.kaggle.com/datasets/kreeshrajani/3k-conversations-dataset-for-chatbot
+
 Depression Reddit Cleaned: https://www.kaggle.com/datasets/infamouscoder/depression-reddit-cleaned
-Human Stress Prediction: https://www.kaggle.com/datasets/michellevp/predicting-anxiety-in-mental-health-data
-Predicting Anxiety in Mental Health Data: 
+
+Human Stress Prediction: https://www.kaggle.com/datasets/kreeshrajani/human-stress-prediction
+
+Predicting Anxiety in Mental Health Data: https://www.kaggle.com/datasets/michellevp/predicting-anxiety-in-mental-health-data
+
 Mental Health Dataset Bipolar: https://www.kaggle.com/datasets/neelghoshal/reddit-mental-health-data
+
 Reddit Mental Health Data: https://www.kaggle.com/datasets/neelghoshal/reddit-mental-health-data
+
 Students Anxiety and Depression Dataset: https://www.kaggle.com/datasets/sahasourav17/students-anxiety-and-depression-dataset
+
 Suicidal Mental Health Dataset:https://www.kaggle.com/datasets/aradhakkandhari/suicidal-mental-health-dataset
+
 Suicidal Tweet Detection Dataset: https://www.kaggle.com/datasets/aunanya875/suicidal-tweet-detection-dataset 
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<h2 id="repository"> Repository </h2>
+<h2 id="repo"> Repository </h2>
 
 * `data` 
     - contains link to copy of the dataset (stored in a publicly accessible cloud storage)
