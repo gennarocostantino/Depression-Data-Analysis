@@ -23,7 +23,7 @@ This project will attempt to find a solution to the following:
   <ol>
     <li><a href="#motivation">Project Motivation</a></li>
     <li><a href="#opportunity">The opportunity</a></li>
-     <li><a href="#keytakeaway">Key Takeaway</a></li>
+    <li><a href="#keytakeaway">Key Takeaway</a></li>
     <li><a href="#data">The Data</a></li>
     <li><a href="#dict">Data Dictionary</a></li>
     <li><a href="#roadmap">Project Roadmap</a></li>
