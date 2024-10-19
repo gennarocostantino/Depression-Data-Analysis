@@ -2,7 +2,7 @@
 <br />
 <div align="center">
 
-  # Sentiment Analysis Mental-Health Predictor
+  # Depression Data Analysis - Mental-Health Predictor
 ### Machine Learning and Mental-Health Predictor
 
   </a>
@@ -12,11 +12,13 @@
 
 ## Project Overview
 
-This project utilizes Machine Learning techniques to attempt to increase the accuracy of understanding public sentiment on mental health issues via social media.
+This project focuses on analyzing a dataset related to personal and lifestyle attributes to explore potential risk factors for depression. The aim is to understand how various factors such as age, lifestyle habits, and medical history may contribute to mental health outcomes. By analyzing these data points, we hope to identify patterns and correlations that could inform future research or intervention strategies.
 
 This project will attempt to find a solution to the following:
 
-"How does public sentiment towards mental health issues vary across different conditions (e.g., depression, anxiety, suicidal thoughts) on social media, and how can this sentiment inform mental health interventions and policy-making?"
+Identify Risk Factors: Determine the most common attributes associated with depression.
+Correlate Lifestyle Choices: Explore how lifestyle choices (e.g., smoking, physical activity, diet) relate to mental health.
+Predictive Modeling: Develop models that can predict the likelihood of depression based on personal and lifestyle attributes.
 
 ## Table of Contents
   
@@ -38,46 +40,63 @@ This project will attempt to find a solution to the following:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <h2 id="motivation"> Project Motivation </h2>
-The motivation for this project stems from the growing recognition of mental health as a critical societal issue, coupled with the increasing use of social media as a platform for individuals to express their thoughts and experiences related to mental health. 
+The motivation for this project stems from the growing recognition of mental health as a critical societal issue, and trying to understand how various factors such as age, lifestyle habits, and medical history may contribute to mental health outcomes. 
 
 <h2 id="opportunity"> The opportunity </h2>
-The data science opportunity lies in leveraging advanced machine learning and natural language processing (NLP) techniques to analyze vast amounts of textual data from these platforms (social media). By automating the analysis of sentiment in mental health-related conversations, we can uncover deep insights into public sentiment, identify key topics of discussion, and track how these sentiments evolve over time. This capability not only enhances our understanding of public attitudes towards mental health but also provides actionable information that can inform mental health interventions, shape public health campaigns, and influence policy decisions. The potential to impact real-world outcomes, such as improving mental health support and reducing stigma, makes this project both timely and valuable. The ability to automate the analysis of sentiment in mental health-related conversations offers several opportunities:
 
-        Real-time Monitoring: Develop tools that can monitor social media in real-time to detect shifts in public sentiment about mental health issues. This can alert mental health professionals and organizations to emerging concerns or crises, enabling timely interventions.
+The analysis of depression data offers a significant opportunity to improve early detection and interventions for mental health issues. Mental illness, particularly depression, is an increasingly common challenge faced by many individuals across various socioeconomic backgrounds. However, the early detection and personalized intervention mechanisms for at-risk individuals remain limited. By leveraging machine learning and data science techniques, we can address this gap and create impactful solutions.
 
-        Targeted Mental Health Campaigns: By understanding the emotional tone and key topics in public discourse, mental health organizations can tailor their communication strategies to address specific concerns, counteract stigma, and promote mental health awareness more effectively.
+In this project, the opportunity lies in:
 
-        Policy and Decision-Making: Policymakers can use insights from sentiment analysis to inform mental health policies that resonate with the public's needs and concerns. For example, detecting a rise in negative sentiment related to anxiety during a particular period could prompt targeted policy actions or public health campaigns.
+- **Early Detection**: By analyzing lifestyle, socioeconomic, and medical factors, the project aims to identify patterns that predict mental health issues before they become critical.
+  
+- **Improving Access to Support**: The model developed from this analysis could be integrated into healthcare systems or public health platforms to offer real-time risk assessments, ensuring timely intervention and guidance for individuals showing signs of mental distress.
 
-        Support for Mental Health Professionals: Mental health professionals can benefit from understanding the broader social context in which their patients operate. Insights from sentiment analysis can help them anticipate and address common challenges faced by their patients, such as stigma or misinformation.
+- **Societal Impact**: Early intervention can lead to improved well-being, reduced economic burden from untreated mental health issues, and better mental health outcomes at a population level. The insights gained from this analysis could guide public health policies and mental health awareness programs.
+
+This project presents a unique opportunity to contribute to a crucial area in public health, with the potential to make a meaningful difference in the lives of those struggling with mental illness.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <h2 id="keytakeaway"> Key takeaways </h2>
-Scalability: Sentiment analysis can process and analyze large datasets, making it possible to understand public sentiment on a massive scale—far beyond what manual analysis could achieve.
 
-Timeliness: By applying real-time sentiment analysis, organizations can respond quickly to shifts in public mood, enabling more agile and effective interventions.
+- **Predictive Potential**: By analyzing socioeconomic, lifestyle, and medical data, this project demonstrates the potential of machine learning to predict mental health issues, providing valuable insights for early detection and intervention.
 
-Contextual Understanding: Beyond simple positive or negative labels, sentiment analysis can provide a nuanced understanding of the public's feelings about specific mental health topics, such as depression, anxiety, or stigma.
+- **Scalability**: The approach used can be scaled to analyze large datasets, making it feasible for healthcare systems and public health organizations to monitor mental health trends and identify at-risk populations on a much larger scale.
 
-Data-Driven Insights: Sentiment analysis can transform unstructured text data into actionable insights, helping to inform decisions in mental health advocacy, public health campaigns, and policy development.
+- **Timely Interventions**: The model offers the opportunity to implement real-time mental health assessments, enabling organizations to take preventive measures and provide support before mental health issues escalate.
 
-Ethical Considerations: It's essential to approach sentiment analysis with sensitivity, particularly in the context of mental health. Ensuring data privacy, addressing potential biases in models, and considering the ethical implications of the findings are crucial steps in responsible data science practice.    
+- **Nuanced Understanding**: Beyond the binary outcome of mental illness prediction, this analysis sheds light on the deeper relationships between factors such as income, age, and lifestyle, offering a more comprehensive understanding of mental health determinants.
+
+- **Data-Driven Decision Making**: This project highlights the power of data-driven insights in public health, helping to inform mental health policy, resource allocation, and targeted interventions based on quantifiable evidence.
+
+- **Ethical Implications**: The sensitive nature of mental health data necessitates careful consideration of privacy and ethical concerns. Ensuring fairness, addressing biases, and maintaining transparency in predictive models are critical to responsible mental health interventions.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <h2 id="data"> The Data</h2>
-The data used for this project is derived from various social media platforms where mental health is a common topic of discussion. This includes Twitter data, Reddit posts, and to build our model we have used the Sentiment Analysis for Mental Health (Kaggle) dataset: 
 
-https://www.kaggle.com/datasets/suchintikasarkar/sentiment-analysis-for-mental-health. 
+The dataset used for this project comes from the [Depression Dataset on Kaggle] (https://www.kaggle.com/datasets/anthonytherrien/depression-dataset/data). This comprehensive dataset focuses on socioeconomic, lifestyle, and medical factors related to mental health, particularly depression. It provides valuable insights for building machine learning models that predict the likelihood of mental illness.
 
-This comprehensive dataset is a meticulously curated collection of mental health statuses tagged from various statements. The dataset amalgamates raw data from multiple sources, cleaned and compiled.
+This dataset contains 413,768 entries, each representing an individual's demographic information, lifestyle choices, and mental health history. The dataset includes features such as age, income, smoking status, physical activity level, history of mental illness, and family history of depression.
 
-Acknowledgments:
-This dataset was created by aggregating and cleaning data from various publicly available datasets on Kaggle. Special thanks to the original dataset creators for their contributions.
+### Key Features:
+- **Age**: The age of the respondent.
+- **Income**: Standardized income data for the individual.
+- **Smoking Status**: Whether the respondent is a current, former, or non-smoker.
+- **Physical Activity Level**: Indicates whether the respondent has a sedentary, moderate, or active lifestyle.
+- **Employment Status**: Reflects whether the individual is employed or unemployed.
+- **History of Mental Illness**: Indicates whether the individual has a history of mental illness. (TARGET)
+- **Family History of Depression**: Information about the presence of depression in the respondent's family.
+- **Chronic Medical Conditions**: Whether the individual suffers from chronic health conditions.
+- **Alcohol Consumption & Dietary Habits**: Data on the individual's alcohol consumption and dietary preferences.
 
-Each of the 51074 instances are a unique comments tagged with a specific mental health status.
-Including:
+### Acknowledgments:
+This dataset was compiled and cleaned by [Anthony Therrien](https://www.kaggle.com/anthonytherrien) from various publicly available sources. It provides a rich resource for understanding how various factors contribute to mental health outcomes, particularly the prevalence of depression.
+
+---
+
+Let me know if you need any adjustments to this!
 
 <h2 id="dict"> Data Dictionary</h2>
 
@@ -87,18 +106,71 @@ Including:
     <th style="text-align: left; background: lightgrey">Description</th>
   </tr>
   <tr>
-    <td style="text-align: left"> <code>unique_id</code> </td>
-    <td style="text-align: left">A unique identifier for each entry.</td>
+    <td>Name</td>
+    <td>The name of the individual (anonymized for privacy).</td>
   </tr>
   <tr>
-    <td style="text-align: left"><code>Statement</code></td>
-    <td style="text-align: left">The textual data or post.</td>
+    <td>Age</td>
+    <td>The age of the individual (in years).</td>
   </tr>
   <tr>
-    <td style="text-align: left"><code>Mental Health Status</code></td>
-    <td style="text-align: left">The tagged mental health status of the statement.</td>
+    <td>Marital Status</td>
+    <td>The marital status (e.g., Single, Married, Divorced, Widowed).</td>
+  </tr>
+  <tr>
+    <td>Education Level</td>
+    <td>The highest level of education attained (e.g., High School, Bachelor's, Master's).</td>
+  </tr>
+  <tr>
+    <td>Number of Children</td>
+    <td>The number of children the individual has.</td>
+  </tr>
+  <tr>
+    <td>Smoking Status</td>
+    <td>Indicates whether the individual is a smoker or non-smoker.</td>
+  </tr>
+  <tr>
+    <td>Physical Activity Level</td>
+    <td>The level of physical activity (e.g., Sedentary, Moderate, Active).</td>
+  </tr>
+  <tr>
+    <td>Employment Status</td>
+    <td>Employment status (e.g., Employed, Unemployed, Retired).</td>
+  </tr>
+  <tr>
+    <td>Income</td>
+    <td>Annual income of the individual (in USD).</td>
+  </tr>
+  <tr>
+    <td>Alcohol Consumption</td>
+    <td>Level of alcohol consumption (e.g., Low, Moderate, High).</td>
+  </tr>
+  <tr>
+    <td>Dietary Habits</td>
+    <td>Indicates the dietary habits (e.g., Healthy, Moderate, Unhealthy).</td>
+  </tr>
+  <tr>
+    <td>Sleep Patterns</td>
+    <td>Quality of sleep (e.g., Good, Fair, Poor).</td>
+  </tr>
+  <tr>
+    <td>History of Mental Illness</td>
+    <td>Whether the individual has a history of mental health issues (Yes/No).</td>
+  </tr>
+  <tr>
+    <td>History of Substance Abuse</td>
+    <td>Indicates if there is a history of substance abuse (Yes/No).</td>
+  </tr>
+  <tr>
+    <td>Family History of Depression</td>
+    <td>Indicates if there is a family history of depression (Yes/No).</td>
+  </tr>
+  <tr>
+    <td>Chronic Medical Conditions</td>
+    <td>Whether the individual has chronic medical conditions (Yes/No).</td>
   </tr>
 </table>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <h2 id="roadmap"> Project Roadmap </h2>
@@ -107,24 +179,24 @@ Including:
   <div style="margin-right: 20px;">
     <h2>1. Data Collection</h2>
     <ul>
-      <li><strong>Task:</strong> Gather text data related to mental health from various social media platforms like Twitter and Reddit, as well as structured datasets such as Sentiment140.</li>
-      <li><strong>Objective:</strong> Compile a comprehensive dataset that includes diverse mental health discussions to ensure a rich variety of sentiment and topic analysis.</li>
+      <li><strong>Task:</strong> Source the dataset from the Depression Dataset on Kaggle, containing information on demographic, socioeconomic, and lifestyle factors related to mental health.</li>
+      <li><strong>Objective:</strong> Gather comprehensive data that captures multiple aspects influencing mental health to build a robust predictive model.</li>
     </ul>
   </div>
   
   <div style="margin-right: 20px;">
     <h2>2. Data Cleaning</h2>
     <ul>
-      <li><strong>Task:</strong> Handle missing data in text entries, remove irrelevant or noisy data, and standardize text format (e.g., lowercase conversion, removal of special characters).</li>
-      <li><strong>Objective:</strong> Ensure the dataset is clean, consistent, and ready for accurate sentiment analysis and modeling.</li>
+      <li><strong>Task:</strong> Handle missing values, encode categorical variables, scale numeric features like income, and ensure that all data is prepared for machine learning models.</li>
+      <li><strong>Objective:</strong> Ensure the data is clean, consistent, and ready for analysis, with no outliers or missing values to affect the model performance.</li>
     </ul>
   </div>
 
   <div style="margin-right: 20px;">
     <h2>3. Exploratory Data Analysis (EDA)</h2>
     <ul>
-      <li><strong>Task:</strong> Explore the cleaned dataset to understand the distribution of sentiments, identify the most commonly discussed mental health topics, and detect underlying patterns or trends.</li>
-      <li><strong>Objective:</strong> Gain insights that will guide feature engineering and model development, and formulate hypotheses for further analysis.</li>
+      <li><strong>Task:</strong> Conduct an in-depth exploration of the data to identify relationships, patterns, and trends. This includes examining age, income, and lifestyle factors against mental health outcomes.</li>
+      <li><strong>Objective:</strong> Gain insights into how different variables interact with mental illness, guiding feature selection and model-building strategies.</li>
     </ul>
   </div>
 
@@ -135,56 +207,59 @@ Including:
   <div style="margin-right: 20px;">
     <h2>4. Data Splitting/Model Selection</h2>
     <ul>
-      <li><strong>Task:</strong> Split the dataset into training, validation, and test sets. Select appropriate machine learning models, such as Logistic Regression, Naive Bayes, or advanced NLP models like BERT, to analyze sentiment.</li>
-      <li><strong>Objective:</strong> Train and fine-tune models to predict sentiment accurately across different mental health topics.</li>
+      <li><strong>Task:</strong> Split the data into training and test sets. Experiment with machine learning models like Logistic Regression and Random Forest for classification.</li>
+      <li><strong>Objective:</strong> Choose the best model that effectively predicts the likelihood of mental illness based on the features provided.</li>
     </ul>
   </div>
   
   <div style="margin-right: 20px;">
     <h2>5. Model Evaluation</h2>
     <ul>
-      <li><strong>Task:</strong> Assess the performance of the trained models using validation data. Evaluate models based on accuracy, precision, recall, and F1-score.</li>
-      <li><strong>Objective:</strong> Identify the most effective model and understand its strengths and limitations, making adjustments as necessary.</li>
+      <li><strong>Task:</strong> Evaluate the models using key metrics like accuracy, precision, recall, and F1-score. Use cross-validation to assess model generalization.</li>
+      <li><strong>Objective:</strong> Identify the most effective model, refining hyperparameters for optimal performance.</li>
     </ul>
   </div>
   
   <div style="margin-right: 20px;">
-    <h2>6. Model Deployment</h2>
+    <h2>6. Feature Engineering and Advanced Modeling</h2>
     <ul>
-      <li><strong>Task:</strong> Deploy the final model to make predictions on unseen test data. Integrate the model into a real-time application, such as a dashboard for mental health professionals to monitor public sentiment.</li>
-      <li><strong>Objective:</strong> Provide actionable insights to stakeholders and continue monitoring model performance in real-world scenarios, making updates as needed.</li>
+      <li><strong>Task:</strong> After initial evaluations, refine features by engineering new ones or removing redundant variables. Explore advanced models like XGBoost or Neural Networks to improve predictions.</li>
+      <li><strong>Objective:</strong> Boost model accuracy and robustness, ensuring it generalizes well to unseen data and provides actionable insights.</li>
     </ul>
   </div>
+
 
 </div>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <h2 id="progression"> Project Progression </h2>
 
-Write here .....
+1. **Initial Project Direction**:
+   - The project initially began by exploring text data related to mental health posts from various online platforms. The goal was to perform sentiment analysis and identify correlations with mental health issues, intending to build a predictive model.
+   - **Challenge**: Unfortunately, the dataset lacked a clear target variable (such as a mental health diagnosis or outcome), which limited the ability to develop a supervised learning model.
+   - **Decision**: Given this limitation, we decided to shift our focus to a more structured dataset that includes relevant features and target variables.
+
+2. **Dataset Shift**:
+   - After assessing the challenges with the initial text data, we decided to pivot to the [Depression Dataset on Kaggle](https://www.kaggle.com/datasets/anthonytherrien/depression-dataset/data).
+   - This dataset provides detailed information about individuals' demographic, lifestyle, and medical factors that are related to mental health outcomes, especially depression. It includes features such as age, income, employment status, and history of mental illness, which are essential for building a supervised learning model.
+
+3. **Current Progress**: PENDING
+   - **Data Cleaning**: We have successfully cleaned the dataset, handled missing values, encoded categorical features, and standardized numerical columns such as income.
+   - **Exploratory Data Analysis (EDA)**: Extensive EDA was performed to uncover key insights regarding the relationships between variables such as income, age, and lifestyle habits, and how they relate to the likelihood of mental illness.
+   - **Modeling**: Logistic Regression and Random Forest models have been implemented, with hyperparameter tuning to optimize the models. We have evaluated these models using metrics like accuracy, precision, recall, and F1-score.
+   - **Model Tuning**: We also experimented with hyperparameters such as regularization strength, solver types, and penalties for Logistic Regression to improve performance. PENDING
+
+4. **What's Missing**:
+   - **Advanced Modeling**: While initial models have been built, more advanced techniques (e.g., XGBoost, Neural Networks) could be explored to enhance predictive accuracy.
+   - **Feature Engineering**: There is an opportunity to refine feature engineering, either by generating new features from existing data or removing those that add redundancy or noise.
+   - **Deployment and Impact**: Next steps include deploying the final model in a real-world setting, such as creating a dashboard to monitor mental health risk or developing a web application for real-time predictions.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <h2 id="datasource"> Data Source </h2>
-The dataset integrates information from the following Kaggle datasets:
+The dataset integrates information from the following Kaggle dataset:
 
-3k Conversations Dataset for Chatbot: https://www.kaggle.com/datasets/kreeshrajani/3k-conversations-dataset-for-chatbot
-
-Depression Reddit Cleaned: https://www.kaggle.com/datasets/infamouscoder/depression-reddit-cleaned
-
-Human Stress Prediction: https://www.kaggle.com/datasets/kreeshrajani/human-stress-prediction
-
-Predicting Anxiety in Mental Health Data: https://www.kaggle.com/datasets/michellevp/predicting-anxiety-in-mental-health-data
-
-Mental Health Dataset Bipolar: https://www.kaggle.com/datasets/neelghoshal/reddit-mental-health-data
-
-Reddit Mental Health Data: https://www.kaggle.com/datasets/neelghoshal/reddit-mental-health-data
-
-Students Anxiety and Depression Dataset: https://www.kaggle.com/datasets/sahasourav17/students-anxiety-and-depression-dataset
-
-Suicidal Mental Health Dataset:https://www.kaggle.com/datasets/aradhakkandhari/suicidal-mental-health-dataset
-
-Suicidal Tweet Detection Dataset: https://www.kaggle.com/datasets/aunanya875/suicidal-tweet-detection-dataset 
+[Depression Dataset on Kaggle](https://www.kaggle.com/datasets/anthonytherrien/depression-dataset/data). 
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <h2 id="repo"> Repository </h2>
@@ -235,7 +310,10 @@ Write here...
 
 <h2 id="next"> Next Steps </h2>
 
-Write here ...
+**What's Missing**:
+   - **Advanced Modeling**: While initial models have been built, more advanced techniques (e.g., XGBoost, Neural Networks) could be explored to enhance predictive accuracy.
+   - **Feature Engineering**: There is an opportunity to refine feature engineering, either by generating new features from existing data or removing those that add redundancy or noise.
+   - **Deployment and Impact**: Next steps include deploying the final model in a real-world setting, such as creating a dashboard to monitor mental health risk or developing a web application for real-time predictions.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
