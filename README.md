@@ -2,24 +2,52 @@
 <br />
 <div align="center">
 
-  # Depression Data Analysis - Mental-Health Predictor
-### Machine Learning and Mental-Health Predictor
+  # Mental-Health Predictor
+### A Data-Driven Approach to Boost Mental Health Outcomes and Build Trust in Support Systems
 
   </a>
 
 
 </div>
 
-## Project Overview
+### Depression Data Analysis
 
-This project focuses on analyzing a dataset related to personal and lifestyle attributes to explore potential risk factors for depression. The aim is to understand how various factors such as age, lifestyle habits, and medical history may contribute to mental health outcomes. By analyzing these data points, we hope to identify patterns and correlations that could inform future research or intervention strategies.
+**Project Overview:**
 
-This project will attempt to find a solution to the following:
+This project analyzes a dataset of personal, lifestyle, and family-related attributes to explore potential risk factors for depression. The objective is to identify key factors, such as family dynamics, sociodemographic characteristics, and lifestyle habits, that may influence mental health outcomes. The goal is to create a more comprehensive understanding of how these variables interact and contribute to an individual’s mental well-being, which can help guide future research or inform targeted interventions.
 
-Identify Risk Factors: Determine the most common attributes associated with depression.
-Correlate Lifestyle Choices: Explore how lifestyle choices (e.g., smoking, physical activity, diet) relate to mental health.
-Predictive Modeling: Develop models that can predict the likelihood of depression based on personal and lifestyle attributes.
+**Approach and Methodology:**
 
+We began by conducting exploratory data analysis (EDA) to investigate the relationships between family/personal health, personal burden, and individual mental health. While While personal burden is often discussed in terms of its economic and emotional effects, its connection to mental health outcomes has not been fully explored. Through EDA, we identified significant patterns and correlations within the data, shedding light on how family/personal-related stressors.
+
+**Stress Indicator Creation:**
+
+A key part of the analysis was the creation of a stress indicator based on various factors, including income, social support, personal burden, family/personal health, and employment status. These variables were selected based on their potential influence on stress and mental health, with the indicator being normalized to ensure comparability across individuals. This stress indicator was then used to further analyze the dataset and uncover how these factors interact with mental health outcomes.
+
+**Hypothesis Testing and Statistical Analysis:**
+
+To validate the stress indicator, we performed hypothesis tests and correlation analysis. We found significant correlations between the stress indicator and key variables, such as income (negative correlation), social support (personal correlation), personal burden (positive correlation), and family/personal health (positive correlation). ANOVA tests for education levels also indicated the relevance of sociodemographic factors in determining stress levels.
+
+**Predictive Modeling:**
+
+We utilized machine learning models, including decision trees and linear regression, to predict stress levels and assess the importance and weight of each feature. The models provided valuable insights into the most significant predictors of stress, including personal burden, social support, and family/personal health. These findings suggest that addressing family-related stressors and improving social support could play a critical role in alleviating stress and enhancing mental health outcomes.
+
+**Unsupervised Learning (K-Means Clustering):** 
+
+To gain deeper insights into the dataset and group individuals with similar characteristics, we applied unsupervised learning techniques, specifically K-means clustering. By segmenting the population into distinct clusters, we were able to identify groups with similar stress levels, personal burdens, and other relevant features. Our goal with clustering is to group individuals based on similar stress profiles to better understand the different stress experiences and tailor support accordingly.
+
+**Conclusion and Insights:**
+
+This analysis highlights how different people stress levels are influenced by factors such as income, personal burden, social support, and family health. By grouping people into distinct clusters, we identified patterns that can help target interventions to reduce stress and improve overall well-being. 
+The actionable insights, including wellness programs, flexible work arrangements, and improved support systems, can be applied across various employee groups to create a healthier, more productive workforce.
+
+
+### Key Objectives
+
+- **Understand Mental Health Drivers**: Investigate the relationship between personal, lifestyle, and family-related factors, such as income, social support, family health, and history of mental illness, and their impact on mental health.
+- **Predictive Modeling**: Develop predictive models to assess the likelihood of mental health challenges, particularly focusing on depression, based on a range of demographic and lifestyle attributes.
+- **Segmentation through Clustering**: Use unsupervised learning techniques like K-Means clustering to group individuals with similar characteristics, allowing for more targeted insights and actionable recommendations for mental health interventions.
+- **Actionable Insights**: Provide actionable insights for companies and organizations to improve employee well-being and mental health, focusing on work-life balance, stress reduction, and support systems.
 ## Table of Contents
   
   <ol>
@@ -33,14 +61,15 @@ Predictive Modeling: Develop models that can predict the likelihood of depressio
     <li><a href="#datasource">Data Source</a></li>
     <li><a href="#repo">Repository</a></li>
     <li><a href="#learnings">Learnings</a></li>
-    <li><a href="#conclusions">Conclusions</a></li>
-    <li><a href="#next">Next Steps</a></li>
+    <li><a href="#conclusions">Conclusions and Next Steps</a></li>
+   
   </ol>
 </details>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <h2 id="motivation"> Project Motivation </h2>
-The motivation for this project stems from the growing recognition of mental health as a critical societal issue, and trying to understand how various factors such as age, lifestyle habits, and medical history may contribute to mental health outcomes. 
+One of the key actionable business insights from this project is understanding how different factors—such as family, personal responsibilities, financial strain, and personal health—contribute to stress levels among employees. To better understand the diverse experiences of employees, we used clustering techniques to group individuals facing similar stress-related challenges. These clusters help us identify patterns in the data and understand how different factors, like family responsibilities or financial strain, influence stress levels.
+
 
 <h2 id="opportunity"> The opportunity </h2>
 
@@ -54,7 +83,10 @@ In this project, the opportunity lies in:
 
 - **Societal Impact**: Early intervention can lead to improved well-being, reduced economic burden from untreated mental health issues, and better mental health outcomes at a population level. The insights gained from this analysis could guide public health policies and mental health awareness programs.
 
-This project presents a unique opportunity to contribute to a crucial area in public health, with the potential to make a meaningful difference in the lives of those struggling with mental illness.
+The goal is to provide organizations with insights that can help them better support employees. For instance, employees experiencing high family burdens may benefit from financial assistance, flexible work arrangements, and mental health resources. By understanding these stress factors, companies can implement targeted interventions to improve work-life balance, reduce stress, and ultimately enhance workplace productivity and retention.
+</p>
+In summary, this project focuses on identifying and addressing the challenges employees face due to family-related stressors, helping organizations create a supportive environment that benefits both employees and the company.
+</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -66,9 +98,7 @@ This project presents a unique opportunity to contribute to a crucial area in pu
 
 - **Timely Interventions**: The model offers the opportunity to implement real-time mental health assessments, enabling organizations to take preventive measures and provide support before mental health issues escalate.
 
-- **Nuanced Understanding**: Beyond the binary outcome of mental illness prediction, this analysis sheds light on the deeper relationships between factors such as income, age, and lifestyle, offering a more comprehensive understanding of mental health determinants.
-
-- **Data-Driven Decision Making**: This project highlights the power of data-driven insights in public health, helping to inform mental health policy, resource allocation, and targeted interventions based on quantifiable evidence.
+- **Data-Driven Decision Making**: This project highlights the power of data-driven insights in public health and workplace, helping to inform mental health policy, resource allocation, and targeted interventions based on quantifiable evidence.
 
 - **Ethical Implications**: The sensitive nature of mental health data necessitates careful consideration of privacy and ethical concerns. Ensuring fairness, addressing biases, and maintaining transparency in predictive models are critical to responsible mental health interventions.
 
@@ -177,26 +207,26 @@ Let me know if you need any adjustments to this!
 <div style="display: flex; align-items: center;">
 
   <div style="margin-right: 20px;">
-    <h2>1. Data Collection</h2>
+    <h2>1. Data Collection and Exploration</h2>
     <ul>
-      <li><strong>Task:</strong> Source the dataset from the Depression Dataset on Kaggle, containing information on demographic, socioeconomic, and lifestyle factors related to mental health.</li>
-      <li><strong>Objective:</strong> Gather comprehensive data that captures multiple aspects influencing mental health to build a robust predictive model.</li>
+      <li><strong>Task:</strong> Source the dataset containing personal, lifestyle, and family-related attributes impacting mental health, such as income, family dynamics, personal burden, and sociodemographic characteristics.</li>
+      <li><strong>Objective:</strong> Gather comprehensive data to understand the multifaceted factors affecting mental well-being, forming the foundation for targeted interventions and research.</li>
     </ul>
   </div>
   
   <div style="margin-right: 20px;">
-    <h2>2. Data Cleaning</h2>
+    <h2>2. Data Cleaning and Preprocessing</h2>
     <ul>
-      <li><strong>Task:</strong> Handle missing values, encode categorical variables, scale numeric features like income, and ensure that all data is prepared for machine learning models.</li>
-      <li><strong>Objective:</strong> Ensure the data is clean, consistent, and ready for analysis, with no outliers or missing values to affect the model performance.</li>
+      <li><strong>Task:</strong> Clean the dataset by handling missing values, encoding categorical variables, scaling numerical features, and ensuring consistency across all data points.</li>
+      <li><strong>Objective:</strong> Prepare clean, consistent, and usable data for analysis, free from outliers and errors that could distort predictive models.</li>
     </ul>
   </div>
 
   <div style="margin-right: 20px;">
-    <h2>3. Exploratory Data Analysis (EDA)</h2>
+    <h2>3. Stress Indicator Creation and Feature Engineering</h2>
     <ul>
-      <li><strong>Task:</strong> Conduct an in-depth exploration of the data to identify relationships, patterns, and trends. This includes examining age, income, and lifestyle factors against mental health outcomes.</li>
-      <li><strong>Objective:</strong> Gain insights into how different variables interact with mental illness, guiding feature selection and model-building strategies.</li>
+      <li><strong>Task:</strong> Develop a normalized "Stress Indicator" that integrates key features, including income, personal burden, family/personal health, and social support, to measure stress levels across individuals.</li>
+      <li><strong>Objective:</strong> Create a robust, comparable measure of stress that can be used to predict mental health outcomes and drive further analysis.</li>
     </ul>
   </div>
 
@@ -205,28 +235,58 @@ Let me know if you need any adjustments to this!
 <div style="display: flex; align-items: center;">
 
   <div style="margin-right: 20px;">
-    <h2>4. Data Splitting/Model Selection</h2>
+    <h2>4. Exploratory Data Analysis (EDA)</h2>
     <ul>
-      <li><strong>Task:</strong> Split the data into training and test sets. Experiment with machine learning models like Logistic Regression and Random Forest for classification.</li>
-      <li><strong>Objective:</strong> Choose the best model that effectively predicts the likelihood of mental illness based on the features provided.</li>
+      <li><strong>Task:</strong> Conduct detailed analysis to identify patterns and correlations between variables, focusing on the relationships between stress levels, family health, personal burden, and sociodemographic factors.</li>
+      <li><strong>Objective:</strong> Uncover insights into how personal, family-related, and lifestyle factors contribute to stress, guiding the feature selection and model-building strategies.</li>
     </ul>
   </div>
   
   <div style="margin-right: 20px;">
-    <h2>5. Model Evaluation</h2>
+    <h2>5. Hypothesis Testing and Statistical Analysis</h2>
     <ul>
-      <li><strong>Task:</strong> Evaluate the models using key metrics like accuracy, precision, recall, and F1-score. Use cross-validation to assess model generalization.</li>
-      <li><strong>Objective:</strong> Identify the most effective model, refining hyperparameters for optimal performance.</li>
+      <li><strong>Task:</strong> Perform hypothesis testing and correlation analysis to validate the significance of key features, such as income, social support, personal burden, and family health.</li>
+      <li><strong>Objective:</strong> Quantify the relationships between variables and validate the importance of stress-related factors to ensure reliable predictions.</li>
     </ul>
   </div>
   
   <div style="margin-right: 20px;">
-    <h2>6. Feature Engineering and Advanced Modeling</h2>
+    <h2>6. Predictive Modeling</h2>
     <ul>
-      <li><strong>Task:</strong> After initial evaluations, refine features by engineering new ones or removing redundant variables. Explore advanced models like XGBoost or Neural Networks to improve predictions.</li>
-      <li><strong>Objective:</strong> Boost model accuracy and robustness, ensuring it generalizes well to unseen data and provides actionable insights.</li>
+      <li><strong>Task:</strong> Apply machine learning techniques like decision trees, random forests, and linear regression to predict stress levels based on the identified features.</li>
+      <li><strong>Objective:</strong> Identify the most influential predictors of stress, including personal burden, social support, and family/personal health, to support targeted interventions.</li>
     </ul>
   </div>
+
+</div>
+
+<div style="display: flex; align-items: center;">
+
+  <div style="margin-right: 20px;">
+    <h2>7. Unsupervised Learning and Clustering</h2>
+    <ul>
+      <li><strong>Task:</strong> Apply K-means clustering to group individuals with similar stress profiles, segmenting the population based on shared characteristics such as stress levels, family burden, and social support.</li>
+      <li><strong>Objective:</strong> Identify distinct groups with unique stress experiences, enabling tailored support interventions and insights into patterns of mental health challenges.</li>
+    </ul>
+  </div>
+  
+  <div style="margin-right: 20px;">
+    <h2>8. Actionable Insights and Recommendations</h2>
+    <ul>
+      <li><strong>Task:</strong> Analyze the results of the clustering and predictive modeling to derive actionable insights for interventions, including wellness programs, flexible work arrangements, and enhanced social support initiatives.</li>
+      <li><strong>Objective:</strong> Provide organizations with targeted strategies to address stress, enhance mental health, and improve overall well-being for employees.</li>
+    </ul>
+  </div>
+  
+  <div style="margin-right: 20px;">
+    <h2>9. Conclusion and Future Work</h2>
+    <ul>
+      <li><strong>Task:</strong> Summarize the key findings, focusing on the predictive models, the significance of various features, and the insights derived from clustering.</li>
+      <li><strong>Objective:</strong> Demonstrate how understanding stress levels and their underlying factors can inform better mental health support and interventions, with potential for future research to refine and improve interventions based on emerging data.</li>
+    </ul>
+  </div>
+
+</div>
 
 
 </div>
@@ -234,32 +294,61 @@ Let me know if you need any adjustments to this!
 
 <h2 id="progression"> Project Progression </h2>
 
+### Project Progression:
+
 1. **Initial Project Direction**:
-   - The project initially began by exploring text data related to mental health posts from various online platforms. The goal was to perform sentiment analysis and identify correlations with mental health issues, intending to build a predictive model.
-   - **Challenge**: Unfortunately, the dataset lacked a clear target variable (such as a mental health diagnosis or outcome), which limited the ability to develop a supervised learning model.
-   - **Decision**: Given this limitation, we decided to shift our focus to a more structured dataset that includes relevant features and target variables.
+   - The project initially began by analyzing text data from mental health-related posts across various online platforms. The goal was to perform sentiment analysis on these texts to identify patterns and correlations with mental health issues, with the aim of developing a predictive model for mental health risk based on sentiment.
+   - **Challenge**: However, the dataset lacked a clear target variable (such as a mental health diagnosis or outcome), which hindered the development of a supervised learning model. 
+   - **Decision**: Given this limitation, it was decided to shift focus to a more structured dataset that included both features and target variables for predicting mental health outcomes.
 
 2. **Dataset Shift**:
-   - After assessing the challenges with the initial text data, we decided to pivot to the [Depression Dataset on Kaggle](https://www.kaggle.com/datasets/anthonytherrien/depression-dataset/data).
-   - This dataset provides detailed information about individuals' demographic, lifestyle, and medical factors that are related to mental health outcomes, especially depression. It includes features such as age, income, employment status, and history of mental illness, which are essential for building a supervised learning model.
+   - After evaluating the challenges with the text data, we pivoted to using the [Depression Dataset on Kaggle](https://www.kaggle.com/datasets/anthonytherrien/depression-dataset/data). This dataset includes detailed information about individuals' demographics, lifestyle, and medical factors that are related to mental health outcomes, specifically depression.
+   - The dataset offered key features such as age, income, employment status, and mental health history, making it ideal for building a supervised learning model to predict mental health risks.
 
-3. **Current Progress**: PENDING
-   - **Data Cleaning**: We have successfully cleaned the dataset, handled missing values, encoded categorical features, and standardized numerical columns such as income.
-   - **Exploratory Data Analysis (EDA)**: Extensive EDA was performed to uncover key insights regarding the relationships between variables such as income, age, and lifestyle habits, and how they relate to the likelihood of mental illness.
-   - **Modeling**: Logistic Regression and Random Forest models have been implemented, with hyperparameter tuning to optimize the models. We have evaluated these models using metrics like accuracy, precision, recall, and F1-score.
-   - **Model Tuning**: We also experimented with hyperparameters such as regularization strength, solver types, and penalties for Logistic Regression to improve performance. PENDING
+3. **Data Cleaning**:
+   - The dataset underwent thorough cleaning, including handling missing values, encoding categorical variables, and scaling numerical features like income. This step ensured that all data was prepared for effective use in machine learning models and that the features were consistent across the dataset.
+   - **Objective**: To ensure that the dataset was complete, consistent, and ready for analysis, allowing for accurate and meaningful model predictions.
 
-4. **What's Missing**:
-   - **Advanced Modeling**: While initial models have been built, more advanced techniques (e.g., XGBoost, Neural Networks) could be explored to enhance predictive accuracy.
-   - **Feature Engineering**: There is an opportunity to refine feature engineering, either by generating new features from existing data or removing those that add redundancy or noise.
-   - **Deployment and Impact**: Next steps include deploying the final model in a real-world setting, such as creating a dashboard to monitor mental health risk or developing a web application for real-time predictions.
+4. **Exploratory Data Analysis (EDA)**:
+   - An extensive EDA was performed to explore the relationships between key features, such as income, age, and lifestyle habits, and their influence on mental health outcomes. This analysis helped identify significant patterns and correlations that were useful for feature selection.
+   - **Objective**: To gain insights into how various factors interact with mental health and guide the feature engineering and modeling steps.
+
+5. **Feature Engineering**:
+   - A crucial step in our analysis was the creation of a "stress indicator" variable, which combined multiple features such as income, social support, personal burden, and family health. This stress indicator helped quantify the level of stress experienced by individuals and was key to predicting mental health outcomes.
+   - **Objective**: To create a comprehensive and interpretable feature that could effectively capture stress levels across individuals, guiding model predictions.
+
+6. **Hypothesis Testing and Statistical Analysis**:
+   - We performed hypothesis tests and correlation analysis to validate the stress indicator. Key findings included significant correlations between the stress indicator and variables such as income (negative correlation), social support (positive correlation), personal burden (positive correlation), and family/personal health (positive correlation).
+   - **Objective**: To confirm the relationships between the stress indicator and mental health, further supporting the validity of our feature selection and the effectiveness of the stress indicator.
+
+7. **Predictive Modeling**:
+   - We implemented machine learning models, including Logistic Regression and Random Forest, to predict mental health outcomes based on the selected features. Hyperparameter tuning was performed for both models to optimize their performance. Model evaluation was conducted using metrics such as accuracy, precision, recall, and F1-score.
+   - **Objective**: To determine the best predictive model based on the relationships identified during EDA and statistical analysis, and to fine-tune the models for optimal performance.
+
+8. **Unsupervised Learning (K-Means Clustering)**:
+   - We applied K-Means clustering to the dataset to group individuals with similar characteristics, such as stress levels, personal burdens, and sociodemographic factors. This helped identify distinct clusters with varying stress profiles, enabling targeted interventions based on group characteristics.
+   - **Objective**: To segment the population based on similar stress experiences and to understand the diversity in stress profiles within the dataset, providing actionable insights for interventions.
+
+9. **Final Model Evaluation**:
+   - The Random Forest model was found to be the most effective model for predicting mental health outcomes. It was evaluated using cross-validation and key performance metrics to ensure its robustness and generalizability. 
+   - **Objective**: To select the best model that provides the most accurate and reliable predictions, which can be used for practical applications.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <h2 id="datasource"> Data Source </h2>
-The dataset integrates information from the following Kaggle dataset:
 
-[Depression Dataset on Kaggle](https://www.kaggle.com/datasets/anthonytherrien/depression-dataset/data). 
+### Data Source
+
+The dataset used in this project integrates information from the following Kaggle dataset:
+
+- **[Depression Dataset on Kaggle](https://www.kaggle.com/datasets/anthonytherrien/depression-dataset/data)**: A comprehensive collection of data capturing demographic, socioeconomic, and lifestyle factors relevant to mental health, specifically focusing on depression.
+
+### Related Articles
+
+- **[Alcohol intake, smoking, sleeping hours, physical activity, and the metabolic syndrome](https://pubmed.ncbi.nlm.nih.gov/17239432/)**: This article explores the relationship between various lifestyle factors and their impact on metabolic syndrome, offering valuable insights into how lifestyle habits influence mental health.
+  
+- **[Stress Assessment Questionnaires](https://academic.oup.com/occmed/article/73/3/175/7143170#google_vignette)**: This paper provides a detailed overview of commonly used stress assessment tools, which are relevant for understanding the psychosocial factors contributing to mental health.
+
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <h2 id="repo"> Repository </h2>
@@ -295,28 +384,18 @@ The dataset integrates information from the following Kaggle dataset:
 * `LICENSE`
     - Project license
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<h2 id="learnings"> Learnings </h2>
+<h2 id="learnings"> Project license </h2>
 
-Write here ...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<h2 id="conclusions"> Conclusions </h2>
-
-Write here...
-
+If you wish to use, distribute, or modify any part of this project, including its findings, please ensure proper attribution is given to the original work. Specifically, you must provide appropriate credit to the author Gennaro Costantino, and include a reference to the project or repository. You may not use the material for commercial purposes without explicit permission.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<h2 id="next"> Next Steps </h2>
+<h2 id="conclusions"> Conclusions and Next Steps </h2>
 
-**What's Missing**:
-   - **Advanced Modeling**: While initial models have been built, more advanced techniques (e.g., XGBoost, Neural Networks) could be explored to enhance predictive accuracy.
-   - **Feature Engineering**: There is an opportunity to refine feature engineering, either by generating new features from existing data or removing those that add redundancy or noise.
-   - **Deployment and Impact**: Next steps include deploying the final model in a real-world setting, such as creating a dashboard to monitor mental health risk or developing a web application for real-time predictions.
+The project has successfully identified key predictors of mental health outcomes and developed a robust predictive model for assessing mental health risks. By leveraging supervised learning techniques, clustering, and advanced model tuning, we were able to uncover actionable insights for improving employee well-being. The next steps will involve deploying this model to help organizations implement more effective mental health programs and interventions.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 
